@@ -5,7 +5,7 @@ plugins {
 }
 
 puzzle_loader {
-    accessManipulatorPath = file("src/main/resources/example_mod.manipulator")
+    accessManipulatorPath = file("src/main/resources/browser_mod.manipulator")
 }
 
 repositories {
@@ -13,13 +13,15 @@ repositories {
 }
 
 dependencies {
+    implementation 'org.seleniumhq.selenium:selenium-java:4.23.1'
+    implementation 'io.github.bonigarcia:webdrivermanager:5.9.2'
 }
 
 processResources {
     // Locations of where to inject the properties
     def resourceTargets = [ "puzzle.mod.json" ]
 
-    // Left item is the name in the target, right is the varuable name
+    // Left item is the name in the target, right is the variable name
     def replaceProperties = [
             "mod_version"     : version,
             "mod_desc"       : desc,

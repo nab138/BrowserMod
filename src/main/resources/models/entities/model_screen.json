@@ -1,0 +1,38 @@
+{
+  "id": "base:entity_model:screen",
+  "texture_width": 854,
+  "texture_height": 480,
+  "bones": [
+    {
+      "name": "root",
+      "pivot": [0, 0, 0]
+    },
+    {
+      "name": "screen",
+      "parent": "root",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cubes": [
+        {
+          "origin": [
+            0,
+            0,
+            0
+          ],
+          "size": [
+            854,
+            480,
+            0
+          ],
+          "uv": [
+            0,
+            0
+          ]
+        }
+      ]
+    }
+  ]
+}
