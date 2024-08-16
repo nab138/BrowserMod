@@ -10,7 +10,6 @@ import com.github.puzzle.loader.entrypoint.interfaces.ModInitializer;
 import finalforeach.cosmicreach.entities.EntityCreator;
 import me.nabdev.browsermod.entities.Screen;
 import me.nabdev.browsermod.commands.Commands;
-import me.nabdev.browsermod.items.GrapplingHook;
 import org.greenrobot.eventbus.Subscribe;
 
 import java.io.IOException;
